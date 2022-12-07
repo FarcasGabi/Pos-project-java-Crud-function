@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    
+    <ui:composition template="/template.xhtml">
+        
+        <ui:define name="title">
+            <h:outputStylesheet name="css/jsfcrud.css"/>
+                 <ul id="list-nav">
+  <li><a href="/HttpEvents/#">Home</a></li>
+  <li><a href="/HttpEvents/faces/produse/List_admin.xhtml">Product</a></li>
+  <li><a href="/HttpEvents/login.jsp">Login</a></li>
+ 
+</ul>
+            <p/>
+             <br />
+             <br />
+             
+            <h:outputText value="#{bundle.ListProduseTitle}"></h:outputText>
+        </ui:define>
+        
+
+        <ui:define name="body">
+            
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="#{bundle.ListProduseEmpty}" rendered="#{produseController.items.rowCount == 0}"/>
+                
+                
+                
+                
+                <h:panelGroup rendered="#{produseController.items.rowCount > 0}">
+                    <h:outputText value="#{produseController.pagination.pageFirstItem + 1}..#{produseController.pagination.pageLastItem + 1}/#{produseController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{produseController.previous}" value="#{bundle.Previous} #{produseController.pagination.pageSize}" rendered="#{produseController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{produseController.next}" value="#{bundle.Next} #{produseController.pagination.pageSize}" rendered="#{produseController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{produseController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListProduseTitle_id}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListProduseTitle_name}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.name}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListProduseTitle_unit}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.unit}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListProduseTitle_quantity}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.quantity}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListProduseTitle_price}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.price}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{produseController.prepareView}" value="#{bundle.ListProduseViewLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{produseController.prepareEdit}" value="#{bundle.ListProduseEditLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{produseController.destroy}" value="#{bundle.ListProduseDestroyLink}"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{produseController.prepareCreate}" value="#{bundle.ListProduseCreateLink}"/>
+                <br />
+                <br />
+          
+                 
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            
+             <h:outputStylesheet name="css/jsfcrud.css"/>
+                 <ul id="list-nav">
+  <li><a href="/HttpEvents/#">Home</a></li>
+  <li><a href="/HttpEvents/faces/produse/List.xhtml">Product</a></li>
+  <li><a href="/HttpEvents/login.jsp">Login</a></li>
+ 
+</ul>
+            <p/>
+             <br />
+             <br />
+            
+            <h:outputText value="#{bundle.EditProduseTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditProduseLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{produseController.selected.id}" title="#{bundle.EditProduseTitle_id}" required="true" requiredMessage="#{bundle.EditProduseRequiredMessage_id}"/>
+                    <h:outputLabel value="#{bundle.EditProduseLabel_name}" for="name" />
+                    <h:inputText id="name" value="#{produseController.selected.name}" title="#{bundle.EditProduseTitle_name}" />
+                    <h:outputLabel value="#{bundle.EditProduseLabel_unit}" for="unit" />
+                    <h:inputText id="unit" value="#{produseController.selected.unit}" title="#{bundle.EditProduseTitle_unit}" />
+                    <h:outputLabel value="#{bundle.EditProduseLabel_quantity}" for="quantity" />
+                    <h:inputText id="quantity" value="#{produseController.selected.quantity}" title="#{bundle.EditProduseTitle_quantity}" />
+                    <h:outputLabel value="#{bundle.EditProduseLabel_price}" for="price" />
+                    <h:inputText id="price" value="#{produseController.selected.price}" title="#{bundle.EditProduseTitle_price}" />
+                </h:panelGrid>
+                <h:commandLink action="#{produseController.update}" value="#{bundle.EditProduseSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditProduseViewLink}"/>
+                <br />
+                <h:commandLink action="#{produseController.prepareList}" value="#{bundle.EditProduseShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+           
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

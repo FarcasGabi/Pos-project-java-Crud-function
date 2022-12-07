@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="NetBeans12Projects">
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/web/WEB-INF/glassfish-web.xml</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/src/java/com/abien/patterns/business/httpevents/publish/Publisher.java</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/web/Listener.jsp</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/web/WEB-INF/beans.xml</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/web/resources/ajax.js</file>
+        </group>
+        <group name="OneDriveULBS-NetBeansProjects">
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/src/java/com/abien/patterns/business/httpevents/publish/Publisher.java</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/web/Listener.jsp</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/src/java/com/abien/patterns/business/httpevents/broker/RealTimeEventBroker.java</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/src/java/servleti/PositionServlet.java</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/src/java/servleti/Status.java</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/web/index.html</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/web/resources/ajax.js</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/src/java/com/abien/patterns/business/httpevents/publish/BrowserWindow.java</file>
+            <file>file:/C:/Users/admin/OneDrive%20-%20Lucian%20Blaga%20University%20of%20Sibiu/Documents/NetBeansProjects/HttpEvents/web/worker.jsp</file>
+        </group>
+        <group>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/produse/List_admin.xhtml</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/src/java/com/abien/patterns/business/httpevents/broker/ProduseFacade.java</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/index.xhtml</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/about.html</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/login.jsp</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/produse/Create.xhtml</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/WEB-INF/glassfish-web.xml</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/src/java/com/abien/patterns/business/httpevents/broker/Produse.java</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/WEB-INF/faces-config.xml</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/src/java/com/abien/patterns/business/httpevents/broker/ProduseController.java</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/produse/List_1.xhtml</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/produse/Edit.xhtml</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/produse/List.xhtml</file>
+            <file>file:/C:/Users/farca/OneDrive/Desktop/proiect/HttpEvents/web/produse/View.xhtml</file>
+        </group>
+    </open-files>
+</project-private>
